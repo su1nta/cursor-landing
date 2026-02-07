@@ -3,452 +3,547 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!doctype html>
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="script.css" />
         <title>Cursor</title>
     </head>
-    <body class="bg-black border-box">
-        <div class="w-3/4 mx-auto relative">
+    <body>
+        <div class="page-container">
             <!-- Nav -->
-            <div class="z-50 bg-black fixed top-0 left-0 w-full">
-                <div
-                    class="w-3/4 mx-auto flex items-center justify-between py-3"
-                >
-                    <div class="flex gap-2 items-center">
+            <div class="navbar-wrapper">
+                <div class="navbar">
+                    <div class="nav-brand">
                         <img
                             src="assets/cursor-icon.jpeg"
                             alt="icon"
-                            class="w-7 h-7"
+                            class="nav-icon"
                         />
                         <img
                             src="assets/Cursor_Logo_Dark.svg"
                             alt="logo"
-                            class="h-4"
+                            class="nav-logo"
                         />
                     </div>
-                    <div class="flex gap-5 text-white text-md">
-                        <button class="hover:text-white/70">Product</button>
-                        <button class="hover:text-white/70">Enterprise</button>
-                        <button class="hover:text-white/70">Pricing</button>
-                        <button class="hover:text-white/70">Resources</button>
+                    <div class="nav-links">
+                        <button class="nav-link">Product</button>
+                        <button class="nav-link">Enterprise</button>
+                        <button class="nav-link">Pricing</button>
+                        <button class="nav-link">Resources</button>
                     </div>
-                    <div class="flex gap-4 text-sm">
-                        <button
-                            class="px-3 py-1 rounded-2xl border border-zinc-200 text-white hover:bg-white/10"
-                        >
-                            Sign In
-                        </button>
-                        <button
-                            class="px-3 py-1 rounded-2xl bg-white hover:bg-white/80"
-                        >
-                            Download
-                        </button>
+                    <div class="nav-actions">
+                        <button class="btn-signin">Sign In</button>
+                        <button class="btn-download">Download</button>
                     </div>
                 </div>
             </div>
 
             <!-- Main CTA -->
-            <div class="mt-30 mb-10">
-                <h2 class="text-2xl text-white max-w-lg mb-6">
+            <div class="hero-cta">
+                <h2 class="hero-title">
                     Built to make you extraordinarily productive, Cursor is the
                     best way to code with AI.
                 </h2>
-                <button
-                    class="px-6 py-3 rounded-3xl text-md bg-white hover:bg-white/80 flex gap-1 items-center"
-                >
+                <button class="btn-cta">
                     Download for macOS
                     <img
                         src="assets/download-icon.svg"
                         alt="Icon"
-                        class="w-5 h-5"
+                        class="btn-icon"
                     />
                 </button>
             </div>
 
             <!-- Hero banner -->
-            <div class="my-30">
+            <div class="hero-banner">
                 <img
                     src="assets/hero.png"
                     alt="hero"
-                    class="rounded-md mx-auto scale-112"
+                    class="hero-image"
                 />
             </div>
 
             <!-- companies -->
-            <div class="mx-auto w-full flex flex-col items-center gap-6">
-                <div class="text-white text-sm text-white">
+            <div class="companies-section">
+                <div class="companies-title">
                     Trusted every day by teams that build world-class software
                 </div>
-                <div class="w-full grid grid-cols-8 gap-3">
-                    <div class="px-4 py-7 bg-white/8 rounded-sm">
+                <div class="companies-grid">
+                    <div class="company-card">
                         <img
                             src="assets/stripe-logo.svg"
                             alt="stripe-logo"
-                            class="h-10 mx-auto"
+                            class="company-logo"
                         />
                     </div>
-                    <div class="px-4 py-7 bg-white/8 rounded-sm">
+                    <div class="company-card">
                         <img
                             src="assets/openai-logo.svg"
                             alt="openai-logo"
-                            class="h-10 mx-auto"
+                            class="company-logo"
                         />
                     </div>
-                    <div class="px-4 py-7 bg-white/8 rounded-sm">
+                    <div class="company-card">
                         <img
                             src="assets/linear-logo.svg"
                             alt="linear-logo"
-                            class="h-10 mx-auto"
+                            class="company-logo"
                         />
                     </div>
-                    <div class="px-4 py-7 bg-white/8 rounded-sm">
+                    <div class="company-card">
                         <img
                             src="assets/datadog-logo.svg"
                             alt="datadog-logo"
-                            class="h-10 mx-auto"
+                            class="company-logo"
                         />
                     </div>
-                    <div class="px-4 py-7 bg-white/8 rounded-sm">
+                    <div class="company-card">
                         <img
                             src="assets/nvidia-logo.svg"
                             alt="nvidia-logo"
-                            class="h-10 mx-auto"
+                            class="company-logo"
                         />
                     </div>
-                    <div class="px-4 py-7 bg-white/8 rounded-sm">
+                    <div class="company-card">
                         <img
                             src="assets/figma-logo.svg"
                             alt="figma-logo"
-                            class="h-10 mx-auto"
+                            class="company-logo"
                         />
                     </div>
-                    <div class="px-4 py-7 bg-white/8 rounded-sm">
+                    <div class="company-card">
                         <img
                             src="assets/ramp-logo.svg"
                             alt="ramp-logo"
-                            class="h-10 mx-auto"
+                            class="company-logo"
                         />
                     </div>
-                    <div class="px-4 py-7 bg-white/8 rounded-sm">
+                    <div class="company-card">
                         <img
                             src="assets/adobe-logo.svg"
                             alt="adobe-logo"
-                            class="h-10 mx-auto"
+                            class="company-logo"
                         />
                     </div>
                 </div>
             </div>
 
             <!-- Features -->
-            <div class="w-full flex bg-zinc-400/10 mt-50 p-5">
-                <div
-                    class="w-1/3 flex flex-col gap-4 p-4 justify-center items-center"
-                >
-                    <div class="max-w-sm">
-                        <h3 class="text-white/80 text-2xl">
+            <div class="feature-row feature-row-mt-50">
+                <div class="feature-content">
+                    <div class="feature-text">
+                        <h3 class="feature-heading">
                             Agents turn ideas into code
                         </h3>
-                        <h4 class="text-2xl text-white/60">
+                        <h4 class="feature-subheading">
                             Accelerate development by handling off tasks to
                             Cursor, while you focus on making decisions
                         </h4>
                     </div>
-                    <div class="w-full max-w-sm">
-                        <button class="text-red-500 text-left text-md">
+                    <div class="feature-cta-wrapper">
+                        <button class="btn-feature">
                             Learn about agentic development →
                         </button>
                     </div>
                 </div>
-                <div class="w-2/3">
-                    <div class="bg-orange-200/20 py-10 rounded-md">
+                <div class="feature-image-wrapper">
+                    <div class="feature-image-container feature-image-container-orange">
                         <img
                             src="assets/feature-1.png"
                             alt="feature-1"
-                            class="h-180 rounded-md mx-auto"
+                            class="feature-image"
                         />
                     </div>
                 </div>
             </div>
-            <div class="w-full flex bg-zinc-400/10 mt-30 p-5">
-                <div class="w-2/3">
-                    <div class="py-10 rounded-md">
+            <div class="feature-row feature-row-mt-30">
+                <div class="feature-image-wrapper">
+                    <div class="feature-image-container">
                         <img
                             src="assets/feature-2.png"
-                            alt="feature-1"
-                            class="h-180 rounded-md mx-auto"
+                            alt="feature-2"
+                            class="feature-image"
                         />
                     </div>
                 </div>
-                <div
-                    class="w-1/3 flex flex-col gap-4 p-4 justify-center items-center"
-                >
-                    <div class="max-w-sm">
-                        <h3 class="text-white/80 text-2xl">
+                <div class="feature-content">
+                    <div class="feature-text">
+                        <h3 class="feature-heading">
                             Magically accurate autocomplete
                         </h3>
-                        <h4 class="text-2xl text-white/60">
+                        <h4 class="feature-subheading">
                             Our specialized Tab model predicts your next action
                             with striking speed and precision
                         </h4>
                     </div>
-                    <div class="w-full max-w-sm">
-                        <button class="text-red-500 text-left text-md">
+                    <div class="feature-cta-wrapper">
+                        <button class="btn-feature">
                             Learn about Tab →
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="w-full flex bg-zinc-400/10 mt-30 p-5">
-                <div
-                    class="w-1/3 flex flex-col gap-4 p-4 justify-center items-center"
-                >
-                    <div class="max-w-sm">
-                        <h3 class="text-white/80 text-2xl">
+            <div class="feature-row feature-row-mt-30">
+                <div class="feature-content">
+                    <div class="feature-text">
+                        <h3 class="feature-heading">
                             In every tool, at every step
                         </h3>
-                        <h4 class="text-2xl text-white/60">
+                        <h4 class="feature-subheading">
                             Cursor reviews your PRs in GitHub, collaborates in
                             Slack, and runs in your terminal.
                         </h4>
                     </div>
-                    <div class="w-full max-w-sm">
-                        <button class="text-red-500 text-left text-md">
+                    <div class="feature-cta-wrapper">
+                        <button class="btn-feature">
                             Learn about Cursor's Surfaces →
                         </button>
                     </div>
                 </div>
-                <div class="w-2/3">
-                    <div class="py-10 rounded-md">
+                <div class="feature-image-wrapper">
+                    <div class="feature-image-container">
                         <img
                             src="assets/feature-3.png"
-                            alt="feature-1"
-                            class="h-180 rounded-md mx-auto"
+                            alt="feature-3"
+                            class="feature-image"
                         />
                     </div>
                 </div>
             </div>
 
             <!-- Testimonials -->
-            <div class="mt-30">
-                <h1 class="text-4xl text-white text-center">
+            <div class="testimonials-header">
+                <h1 class="testimonials-title">
                     The new way to build software.
                 </h1>
             </div>
-            <div class="w-full grid grid-cols-3 gap-2 mt-20">
-                <div class="bg-white/10 h-60">
-                    <div class="h-2/3 w-full p-5 text-white/85">
-                        “It was night and day from one batch to another,
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        "It was night and day from one batch to another,
                         adoption went from single digits to over 80%. It just
                         spread like wildfire, all the best builders were using
-                        Cursor.”
+                        Cursor."
                     </div>
-                    <div class="h-1/3 w-full px-5 flex gap-4">
+                    <div class="testimonial-author">
                         <img
                             src="assets/user-1.webp"
                             alt="Diana Hu"
-                            class="rounded-md h-12"
+                            class="testimonial-avatar"
                         />
-                        <div class="flex flex-col gap-1">
-                            <h5 class="text-sm text-white">Diana Hu</h5>
-                            <span class="text-sm text-white/70"
-                                >General Partner, Y Combinator</span
-                            >
+                        <div class="testimonial-info">
+                            <h5 class="testimonial-name">Diana Hu</h5>
+                            <span class="testimonial-role">General Partner, Y Combinator</span>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white/10 h-60">
-                    <div class="h-2/3 w-full p-5 text-white/85">
-                        “My favorite enterprise AI service is Cursor. Every one
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        "My favorite enterprise AI service is Cursor. Every one
                         of our engineers, some 40,000, are now assisted by AI
-                        and our productivity has gone up incredibly.”
+                        and our productivity has gone up incredibly."
                     </div>
-                    <div class="h-1/3 w-full px-5 flex gap-4">
+                    <div class="testimonial-author">
                         <img
                             src="assets/user-2.webp"
-                            alt="Diana Hu"
-                            class="rounded-md h-12"
+                            alt="Jensen Huang"
+                            class="testimonial-avatar"
                         />
-                        <div class="flex flex-col gap-1">
-                            <h5 class="text-sm text-white">Jensen Huang</h5>
-                            <span class="text-sm text-white/70"
-                                >President & CEO, NVIDIA</span
-                            >
+                        <div class="testimonial-info">
+                            <h5 class="testimonial-name">Jensen Huang</h5>
+                            <span class="testimonial-role">President & CEO, NVIDIA</span>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white/10 h-60">
-                    <div class="h-2/3 w-full p-5 text-white/85">
-                        “The best LLM applications have an autonomy slider: you
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        "The best LLM applications have an autonomy slider: you
                         control how much independence to give the AI. In Cursor,
                         you can do Tab completion, Cmd+K for targeted edits, or
                         you can let it rip with the full autonomy agentic
-                        version.”
+                        version."
                     </div>
-                    <div class="h-1/3 w-full px-5 flex gap-4">
+                    <div class="testimonial-author">
                         <img
                             src="assets/user-3.webp"
-                            alt="Diana Hu"
-                            class="rounded-md h-12"
+                            alt="Andrej Karpathy"
+                            class="testimonial-avatar"
                         />
-                        <div class="flex flex-col gap-1">
-                            <h5 class="text-sm text-white">Andrej Karpathy</h5>
-                            <span class="text-sm text-white/70"
-                                >CEO, Eureka Labs</span
-                            >
+                        <div class="testimonial-info">
+                            <h5 class="testimonial-name">Andrej Karpathy</h5>
+                            <span class="testimonial-role">CEO, Eureka Labs</span>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white/10 h-60">
-                    <div class="h-2/3 w-full p-5 text-white/85">
-                        “Cursor quickly grew from hundreds to thousands of
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        "Cursor quickly grew from hundreds to thousands of
                         extremely enthusiastic Stripe employees. We spend more
                         on R&D and software creation than any other undertaking,
                         and there's significant economic outcomes when making
-                        that process more efficient.”
+                        that process more efficient."
                     </div>
-                    <div class="h-1/3 w-full px-5 flex gap-4">
+                    <div class="testimonial-author">
                         <img
                             src="assets/user-4.webp"
-                            alt="Diana Hu"
-                            class="rounded-md h-12"
+                            alt="Patrick Collison"
+                            class="testimonial-avatar"
                         />
-                        <div class="flex flex-col gap-1">
-                            <h5 class="text-sm text-white">Patrick Collison</h5>
-                            <span class="text-sm text-white/70"
-                                >Co-Founder & CEO, Stripe</span
-                            >
+                        <div class="testimonial-info">
+                            <h5 class="testimonial-name">Patrick Collison</h5>
+                            <span class="testimonial-role">Co-Founder & CEO, Stripe</span>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white/10 h-60">
-                    <div class="h-2/3 w-full p-5 text-white/85">
-                        “The most useful AI tool that I currently pay for, hands
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        "The most useful AI tool that I currently pay for, hands
                         down, is Cursor. It's fast, autocompletes when and where
                         you need it to, handles brackets properly, sensible
                         keyboard shortcuts, bring-your-own-model... everything
-                        is well put together.”
+                        is well put together."
                     </div>
-                    <div class="h-1/3 w-full px-5 flex gap-4">
+                    <div class="testimonial-author">
                         <img
                             src="assets/user-5.webp"
-                            alt="Diana Hu"
-                            class="rounded-md h-12"
+                            alt="shadcn"
+                            class="testimonial-avatar"
                         />
-                        <div class="flex flex-col gap-1">
-                            <h5 class="text-sm text-white">shadcn</h5>
-                            <span class="text-sm text-white/70"
-                                >chad guy, shadcn/ui</span
-                            >
+                        <div class="testimonial-info">
+                            <h5 class="testimonial-name">shadcn</h5>
+                            <span class="testimonial-role">chad guy, shadcn/ui</span>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white/10 h-60">
-                    <div class="h-2/3 w-full p-5 text-white/85">
-                        “It's definitely becoming more fun to be a programmer.
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        "It's definitely becoming more fun to be a programmer.
                         We are at the 1% of what's possible, and it's in
                         interactive experiences like Cursor where models like
-                        GPT-5 shine brightest.”
+                        GPT-5 shine brightest."
                     </div>
-                    <div class="h-1/3 w-full px-5 flex gap-4">
+                    <div class="testimonial-author">
                         <img
                             src="assets/user-1.webp"
-                            alt="Diana Hu"
-                            class="rounded-md h-12"
+                            alt="Greg Brockman"
+                            class="testimonial-avatar"
                         />
-                        <div class="flex flex-col gap-1">
-                            <h5 class="text-sm text-white">Greg Brockman</h5>
-                            <span class="text-sm text-white/70"
-                                >President, OpenAI</span
-                            >
+                        <div class="testimonial-info">
+                            <h5 class="testimonial-name">Greg Brockman</h5>
+                            <span class="testimonial-role">President, OpenAI</span>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Another Feature -->
-            <div class="mt-30">
-                <h1 class="text-4xl text-white text-left">
+            <div class="frontier-header">
+                <h1 class="frontier-title">
                     Stay on the frontier
                 </h1>
             </div>
-            <div class="w-full grid grid-cols-3 gap-2 mt-20">
-                <div class="bg-white/10 h-140">
-                    <div class="h-2/3 w-full p-5 text-white/85">
-                        “It was night and day from one batch to another,
-                        adoption went from single digits to over 80%. It just
-                        spread like wildfire, all the best builders were using
-                        Cursor.”
+            <div class="frontier-grid">
+                <div class="frontier-card">
+                    <div class="frontier-card-content">
+                        <h4 class="frontier-card-title">
+                            Use the best model for every task
+                        </h4>
+                        <p class="frontier-card-desc">
+                            Choose between every cutting-edge model from OpenAI, Anthropic, Gemini, xAI, and Cursor.
+                        </p>
+                        <button class="frontier-card-btn">
+                            Explore Models →
+                        </button>
                     </div>
-                    <div class="h-1/3 w-full px-5 flex gap-4">
+                    <div class="frontier-card-image-wrapper">
                         <img
-                            src="assets/user-1.webp"
-                            alt="Diana Hu"
-                            class="rounded-md h-12"
+                            src="assets/bento-1.png"
+                            alt="bento-1"
+                            class="frontier-card-image"
                         />
-                        <div class="flex flex-col gap-1">
-                            <h5 class="text-sm text-white">Diana Hu</h5>
-                            <span class="text-sm text-white/70"
-                                >General Partner, Y Combinator</span
-                            >
-                        </div>
                     </div>
                 </div>
-                <div class="bg-white/10 h-140">
-                    <div class="h-2/3 w-full p-5 text-white/85">
-                        “My favorite enterprise AI service is Cursor. Every one
-                        of our engineers, some 40,000, are now assisted by AI
-                        and our productivity has gone up incredibly.”
+                <div class="frontier-card">
+                    <div class="frontier-card-content">
+                        <h4 class="frontier-card-title">
+                            Complete codebase understanding
+                        </h4>
+                        <p class="frontier-card-desc">
+                            Cursor learns how your codebase works, no matter the scale or complexity.
+                        </p>
+                        <button class="frontier-card-btn">
+                            Learn about codebase indexing →
+                        </button>
                     </div>
-                    <div class="h-1/3 w-full px-5 flex gap-4">
+                    <div class="frontier-card-image-wrapper">
                         <img
-                            src="assets/user-2.webp"
-                            alt="Diana Hu"
-                            class="rounded-md h-12"
+                            src="assets/bento-2.png"
+                            alt="bento-2"
+                            class="frontier-card-image"
                         />
-                        <div class="flex flex-col gap-1">
-                            <h5 class="text-sm text-white">Jensen Huang</h5>
-                            <span class="text-sm text-white/70"
-                                >President & CEO, NVIDIA</span
-                            >
-                        </div>
                     </div>
                 </div>
-                <div class="bg-white/10 h-140 flex flex-col items-center justify-center">
-                    <div class="h-1/5 w-full p-2">
-                        <h4 class="text-xl text-white">
+                <div class="frontier-card">
+                    <div class="frontier-card-content">
+                        <h4 class="frontier-card-title">
                             Develop enduring software
                         </h4>
-                        <p class="text-white/85 mt-3">
+                        <p class="frontier-card-desc">
                             Trusted by over half of the Fortune 500 to
                             accelerate development, securely and at scale.
                         </p>
-                        <button class="text-red-500 mt-4">
+                        <button class="frontier-card-btn">
                             Explore Enterprise →
                         </button>
                     </div>
-                    <div class="h-4/5 w-full p-2 flex gap-4">
+                    <div class="frontier-card-image-wrapper">
                         <img
                             src="assets/homepage-team-photo-1.webp"
                             alt="team-photo-1"
-                            class="rounded-md h-100"
+                            class="frontier-card-image"
                         />
+                    </div>
+                </div>
+            </div>
+
+            <!--changelog-->
+            <div class="changelog-section">
+                <h1 class="changelog-title">
+                    Changelog
+                </h1>
+                <div class="changelog-grid">
+                    <div class="changelog-card">
+                        <div class="changelog-card-header">
+                            <div class="changelog-version">
+                                <span>2.4</span>
+                            </div>
+                            <div class="changelog-date">Jan 22, 2026</div>
+                        </div>
+                        <div class="changelog-card-body">
+                            <div class="changelog-card-text">Subagents, skills and image generation</div>
+                        </div>
+                    </div>
+                    <div class="changelog-card">
+                        <div class="changelog-card-header">
+                            <div class="changelog-date">Jan 16, 2026</div>
+                        </div>
+                        <div class="changelog-card-body">
+                            <div class="changelog-card-text">CLI Agent Modes and Cloud Handoff</div>
+                        </div>
+                    </div>
+                    <div class="changelog-card">
+                        <div class="changelog-card-header">
+                            <div class="changelog-date">Jan 8, 2026</div>
+                        </div>
+                        <div class="changelog-card-body">
+                            <div class="changelog-card-text">New CLI features and improved CLI performance</div>
+                        </div>
+                    </div>
+                    <div class="changelog-card">
+                        <div class="changelog-card-header">
+                            <div class="changelog-version">
+                                <span>2.3</span>
+                            </div>
+                            <div class="changelog-date">Dec 22, 2026</div>
+                        </div>
+                        <div class="changelog-card-body">
+                            <div class="changelog-card-text">Layout Customization and Stability Improvements</div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Footer -->
-            <footer
-                class="mt-32 border-t border-white/5 pt-12 pb-8 text-white/80 text-sm"
-            >
-                <div class="max-w-3/4 mx-auto flex justify-between gap-16">
-                    <div class="space-y-3">
-                        <h4
-                            class="text-xs font-semibold tracking-[0.12em] uppercase text-white/60"
-                        >
-                            Product
+            <!-- career link -->
+            <div class="career-section">
+                <div class="career-content">
+                    <div class="career-text">
+                        <h4 class="career-heading">
+                            Cursor is an applied research team focused on building the future of software development.
                         </h4>
-                        <ul class="space-y-1.5">
+                    </div>
+                    <div class="career-cta-wrapper">
+                        <button class="btn-feature">
+                            Join us →
+                        </button>
+                    </div>
+                </div>
+                <div class="career-image-wrapper">
+                    <div class="career-image-container">
+                        <img
+                            src="assets/homepage-team-photo.webp"
+                            alt="team photo"
+                            class="career-image"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Highlights -->
+            <div class="highlights-section">
+                <div class="highlights-grid">
+                    <div class="highlights-header">
+                        <h2 class="highlights-title">Recent highlights</h2>
+                    </div>
+                    <div class="highlights-list">
+                        <article class="highlight-card">
+                            <h3 class="highlight-card-title">
+                                Towards self-driving codebases
+                            </h3>
+                            <p class="highlight-card-desc">
+                                We're making a part of our multi-agent research harness available to try
+                                today in preview.
+                            </p>
+                            <p class="highlight-card-meta">Research · Feb 5, 2026</p>
+                        </article>
+
+                        <article class="highlight-card">
+                            <h3 class="highlight-card-title highlight-card-title-wide">
+                                Salesforce ships higher-quality code across 20,000 developers with Cursor
+                            </h3>
+                            <p class="highlight-card-desc">
+                                Over 90% of developers at Salesforce now use Cursor, driving double-digit
+                                improvements in cycle time, PR velocity, and code quality.
+                            </p>
+                            <p class="highlight-card-meta">Customers · Jan 21, 2026</p>
+                        </article>
+
+                        <article class="highlight-card">
+                            <h3 class="highlight-card-title">
+                                Best practices for coding with agents
+                            </h3>
+                            <p class="highlight-card-desc">
+                                A comprehensive guide to working with coding agents, from starting with
+                                plans to managing context, customizing workflows, and reviewing code.
+                            </p>
+                            <p class="highlight-card-meta">Product · Jan 9, 2026</p>
+                        </article>
+                    </div>
+                </div>
+                <button class="btn-view-more">
+                    <span>View more posts</span>
+                    <span>→</span>
+                </button>
+            </div>
+
+            <!-- Join Cursor -->
+            <div class="join-section">
+                <h1 class="join-title">Try Cursor now.</h1>
+                <div class="join-btn-wrapper">
+                    <button class="btn-cta">
+                        Download for macOS
+                        <img
+                            src="assets/download-icon.svg"
+                            alt="Icon"
+                            class="btn-icon"
+                        />
+                    </button>
+                </div>
+            </div>
+                
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Product</h4>
+                        <ul class="footer-column-list">
                             <li>Agents</li>
                             <li>Enterprise</li>
                             <li>Code Review</li>
@@ -458,13 +553,9 @@
                             <li>Pricing</li>
                         </ul>
                     </div>
-                    <div class="space-y-3">
-                        <h4
-                            class="text-xs font-semibold tracking-[0.12em] uppercase text-white/60"
-                        >
-                            Resources
-                        </h4>
-                        <ul class="space-y-1.5">
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Resources</h4>
+                        <ul class="footer-column-list">
                             <li>Download</li>
                             <li>Changelog</li>
                             <li>Docs</li>
@@ -472,13 +563,9 @@
                             <li>Status</li>
                         </ul>
                     </div>
-                    <div class="space-y-3">
-                        <h4
-                            class="text-xs font-semibold tracking-[0.12em] uppercase text-white/60"
-                        >
-                            Company
-                        </h4>
-                        <ul class="space-y-1.5">
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Company</h4>
+                        <ul class="footer-column-list">
                             <li>Careers</li>
                             <li>Blog</li>
                             <li>Community</li>
@@ -487,26 +574,18 @@
                             <li>Anysphere</li>
                         </ul>
                     </div>
-                    <div class="space-y-3">
-                        <h4
-                            class="text-xs font-semibold tracking-[0.12em] uppercase text-white/60"
-                        >
-                            Legal
-                        </h4>
-                        <ul class="space-y-1.5">
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Legal</h4>
+                        <ul class="footer-column-list">
                             <li>Terms of Service</li>
                             <li>Privacy Policy</li>
                             <li>Data Use</li>
                             <li>Security</li>
                         </ul>
                     </div>
-                    <div class="space-y-3">
-                        <h4
-                            class="text-xs font-semibold tracking-[0.12em] uppercase text-white/60"
-                        >
-                            Connect
-                        </h4>
-                        <ul class="space-y-1.5">
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Connect</h4>
+                        <ul class="footer-column-list">
                             <li>X</li>
                             <li>LinkedIn</li>
                             <li>YouTube</li>
@@ -514,34 +593,23 @@
                     </div>
                 </div>
 
-                <div
-                    class="max-w-5xl mx-auto mt-10 flex items-center justify-between gap-4 text-xs text-white/50"
-                >
-                    <div class="flex items-center gap-4">
-                        <span>© 2026 Anysphere, Inc.</span>
-                        <span class="inline-flex items-center gap-1">
-                            <span
-                                class="inline-flex h-4 w-4 items-center justify-center rounded-full border border-white/30 text-[0.55rem]"
-                                >✓</span
-                            >
+                <div class="footer-bottom">
+                    <div class="footer-legal">
+                        <span>&copy; 2026 Anysphere, Inc.</span>
+                        <span class="footer-cert">
+                            <span class="footer-cert-icon">✓</span>
                             <span>SOC 2 Certified</span>
                         </span>
                     </div>
-                    <div class="flex items-center gap-3">
-                        <button
-                            class="flex h-7 w-7 items-center justify-center rounded-full border border-white/20 bg-white/5"
-                        >
-                            <span class="text-[0.65rem]">☾</span>
+                    <div class="footer-controls">
+                        <button class="btn-theme">
+                            <span class="btn-theme-icon">☾</span>
                         </button>
-                        <button
-                            class="flex h-7 w-7 items-center justify-center rounded-full border border-white/20 bg-white/5"
-                        >
-                            <span class="text-[0.65rem]">☀︎</span>
+                        <button class="btn-theme">
+                            <span class="btn-theme-icon">☀︎</span>
                         </button>
-                        <button
-                            class="flex items-center gap-1 rounded-full border border-white/20 bg-white/5 px-3 py-1"
-                        >
-                            <span class="text-[0.65rem]">🌐</span>
+                        <button class="btn-lang">
+                            <span class="btn-lang-icon">🌐</span>
                             <span>English</span>
                         </button>
                     </div>
